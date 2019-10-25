@@ -13,7 +13,7 @@
                     <h1><img src="https://s3-eu-west-1.amazonaws.com/uploads.playbaamboozle.com/uploads/images/4895/1542358401_71269?fbclid=IwAR1W1_R56LPT4j5RSXYWg8Hk5&#45;&#45;0W1zgjjwONPnrBNUzpsGvRU2iuYUU-74"
                              width="120" height="120" alt="Sundhed" align="top">
                         Patientkalenderen</h1>
-                    <h3>Din personlige hospitals guide 2.0</h3>
+                    <h3>Din personlige hospitals guide 3.0</h3>
                     <hr color="black" size="2.5">
                 </div>
                 <h2>Login til din personlige kalender her</h2>
