@@ -26,7 +26,7 @@
                 <div class="item4">
                     <form class="username" action="/hello/" method="post">
                         Brugernavn: <br>
-                        <input type="text" id="CPR" name="username"><br>
+                        <input type="text" id="user" name="username"><br>
                         Adgangskode: <br>
                         <input type="password" name="password"><br>
                         <button id = "logind"> log ind </button>
