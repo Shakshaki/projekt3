@@ -18,8 +18,10 @@ public class TestServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String input = req.getParameter("username");
-        System.out.println(input);
-        resp.sendRedirect("/" +"?username=" + input);
+        String inputBruger = req.getParameter("username");
+        String inputPassword = req.getParameter("password");
+        System.out.println(inputBruger);
+        System.out.println((inputPassword));
+        resp.sendRedirect("/" +"?username=" + inputBruger);
     }
 }
