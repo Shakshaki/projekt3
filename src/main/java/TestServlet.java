@@ -18,8 +18,16 @@ public class TestServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String input = req.getParameter("username"); //henter parameter fra brugernavn-indtastningsfeltet i indexfilen
-        System.out.println(input); // printer det indtastede brugernavn i output
-        resp.sendRedirect("/" +"?username=" + input); //det indtastede brugernavn vises på siden samt i urlen
+        String inputBruger = req.getParameter("username"); //henter parameter fra brugernavn-indtastningsfeltet i indexfilen
+        String inputPassword = req.getParameter("password"); //henter parameter fra password-indtastningsfeltet i indexfilen
+        System.out.println(inputBruger); //printer det indtastede brugernavn i output
+        System.out.println((inputPassword)); //printer det indtastede password i output
+        resp.sendRedirect("/" +"?username=" + inputBruger); //det indtastede brugernavn vises på hjemmesiden og i urlen
+        resp.sendRedirect("/" +"?password=" + inputPassword); //det indtastede brugernavn vises på hjemmesiden og i urlen
+
+
+
+
+
     }
 }
