@@ -18,21 +18,27 @@
                 </div>
                 <h2>Login til din personlige kalender her</h2>
                 <h3><% out.println( new Date()); %></h3>
+                <h4>
+                    <p>
+                        bruger er oprettet med navnet <span id="outputBrugernavn"><% out.print(request.getParameter("username")); %>
+                    </p>
+                </h4>
                 <div class="item4">
-                    <form class="username">
+                    <form class="username" action="/hello/test" method="post">
                         Brugernavn: <br>
-                        <input type="text" name="username"><br>
+                        <input type="text" id="CPR" name="username"><br>
                         Adgangskode: <br>
                         <input type="password" name="password"><br>
+                        <button id = "logind"> log ind </button>
                     </form>
                     <form>
                         <input type="radio" name="type" value="patient" checked> Patient <br>
                         <input type="radio" name="type" value="personale"> Fagpersonale <br>
                     </form>
-                    <br>
-                    <button class="login"> Login </button>
                 </div>
             </div>
         </div>
     </body>
 </html>
+
+
