@@ -4,15 +4,11 @@ public class Forbindelse {
 
     private Connection connection;
 
-    public Forbindelse(){
-
-    }
-
-    public static void main(String[] arg) throws Exception {
+    public Forbindelse() {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();  //indlæser driver-klasse
-            String url = "jdbc:mysql://127.0.0.1:3306/?user=root" ;
+            String url = "jdbc:mysql://127.0.0.1:3306/?user=root";
             String userName = "root";
             String password = "1Djshaki";
             Connection conn = DriverManager.getConnection(url, userName, password);
@@ -24,9 +20,9 @@ public class Forbindelse {
             System.out.println("forbindelse undtagelse: " + e.getMessage());
             e.printStackTrace();
         }
-    }
 
-    public void createUser(){
+    }
+    public void searchUser(){
 
     }
 }
