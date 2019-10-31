@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet({"/hello/*"})
 public class TestServlet extends HttpServlet {
 
+    private Forbindelse forbindelse = new Forbindelse();
+
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
             resp.getWriter().write("Hej!" + req.getRequestURI());
     }
@@ -26,6 +28,6 @@ public class TestServlet extends HttpServlet {
         System.out.println(inputBruger); //printer det indtastede brugernavn i output
         System.out.println((inputPassword)); //printer det indtastede password i output
         resp.sendRedirect("/" +"?username=" + inputBruger); //det indtastede brugernavn vises på hjemmesiden og i urlen
-
+        //forbindelse.
     }
 }

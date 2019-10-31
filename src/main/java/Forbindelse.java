@@ -2,6 +2,12 @@ import java.sql.*;
 
 public class Forbindelse {
 
+    private Connection connection;
+
+    public Forbindelse(){
+
+    }
+
     public static void main(String[] arg) throws Exception {
 
         try {
@@ -18,5 +24,9 @@ public class Forbindelse {
             System.out.println("forbindelse undtagelse: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+
+    public void createUser(){
+
     }
 }
