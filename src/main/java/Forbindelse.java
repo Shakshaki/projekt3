@@ -6,9 +6,9 @@ public class Forbindelse {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();  //indlæser driver-klasse
-            String url = "jdbc:mysql://2001:878:200:4102:207:e9ff:fe62:eed:3306/?user=sika";
-            String userName = "sika";
-            String password = "itSMRC2019";
+            String url = "jdbc:mysql://127.0.0.1:3306/?user=root" ;
+            String userName = "root";
+            String password = "1Djshaki";
             Connection conn = DriverManager.getConnection(url, userName, password);
             //System.out.println("["+cpr+"]");
             if (conn != null) {

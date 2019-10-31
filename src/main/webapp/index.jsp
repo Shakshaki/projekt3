@@ -20,7 +20,7 @@
                 <h3><% out.println( new Date()); %></h3>
                 <h4>
                     <p>
-                        bruger er oprettet med navnet <% out.print(request.getParameter("username")); %>
+                        bruger er oprettet med navnet <span id="outputBrugernavn"><% out.print(request.getParameter("username")); %>
                     </p>
                 </h4>
                 <div class="item4">
