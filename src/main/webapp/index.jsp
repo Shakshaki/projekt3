@@ -29,7 +29,7 @@
                         <input type="text" id="user" name="username"><br>
                         Adgangskode: <br>
                         <input type="password" name="password"><br>
-                        <button id = "logind"> log ind </button>
+                        <input type="submit" id = "logind" value="log ind">  </input>
                     </form>
                     <form>
                         <input type="radio" name="type" value="patient" checked> Patient <br>
@@ -40,5 +40,6 @@
         </div>
     </body>
 </html>
+
 
 
