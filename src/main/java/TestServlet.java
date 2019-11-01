@@ -9,6 +9,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 
 @WebServlet({"/hello/*"})
 public class TestServlet extends HttpServlet {
@@ -18,14 +20,12 @@ public class TestServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("1");
         String inputBruger = req.getParameter("username"); //henter parameter fra brugernavn-indtastningsfeltet i indexfilen
-        System.out.println("2");
         String inputPassword = req.getParameter("password"); //henter parameter fra password-indtastningsfeltet i indexfilen
-        System.out.println("3");
         System.out.println(inputBruger); //printer det indtastede brugernavn i output
         System.out.println((inputPassword)); //printer det indtastede password i output
         resp.sendRedirect("/" +"?username=" + inputBruger); //det indtastede brugernavn vises på hjemmesiden og i urlen
+
 
     }
 }

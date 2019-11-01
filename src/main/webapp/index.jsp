@@ -24,7 +24,7 @@
                     </p>
                 </h4>
                 <div class="item4">
-                    <form class="username" action="/hello/" method="post">
+                    <form class="username" action="/hello/" method="post"> <!når brugeren logger ind, kalder jsp'en på Servletten>
                         Brugernavn: <br>
                         <input type="text" id="user" name="username"><br>
                         Adgangskode: <br>
