@@ -20,11 +20,11 @@
                 <h3><% out.println( new Date()); %></h3>
                 <h4>
                     <p>
-                        bruger er oprettet med navnet <span id="outputBrugernavn"><% out.print(request.getParameter("username")); %>
+                        bruger er oprettet med navnet <% out.print(request.getParameter("username")); %>
                     </p>
                 </h4>
                 <div class="item4">
-                    <form class="username" action="/hello/" method="post"> <!når brugeren logger ind, kalder jsp'en på Servletten>
+                    <form class="username" action="/hello/" method="POST">
                         Brugernavn: <br>
                         <input type="text" id="user" name="username"><br>
                         Adgangskode: <br>
